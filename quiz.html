@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> HUW 167-final project</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+<div id="main">
+  <header>
+    <h1>QUIZZ APP</h1>
+    <p>fnial project quiz app made by Jesus.S.M</p>
+  </header>
+  <section>
+    
+    <form name="quizForm" >
+      <h3>1. who wrote SCOTT PILGRIM vs the world?</h3>
+      <input type="radio" name="q1" value="a" id="q1a">a. Bryan lee o'malley<br>
+      <input type="radio" name="q1" value="b" id="q1b">b. Louis sachar<br>
+      <input type="radio" name="q1" value="c" id="q1c">c. stan lee<br>
+      <input type="radio" name="q1" value="d" id="q1d">d. skottie young<br>
+
+      <h3>2.  who dirteced avengers endgame?</h3>
+      <input type="radio" name="q2" value="a" id="q2a">a. jon watts<br>
+      <input type="radio" name="q2" value="b" id="q2b">b. scott derrickson<br>
+      <input type="radio" name="q2" value="c" id="q2c">c. james gunn<br>
+      <input type="radio" name="q2" value="d" id="q2d">d. joe russo<br>
+
+      <h3>3. what is the national animal of scottland?</h3>
+      <input type="radio" name="q3" value="a" id="q3a">a. rabbit<br>
+      <input type="radio" name="q3" value="b" id="q3b">b. unicorn<br>
+      <input type="radio" name="q3" value="c" id="q3c">c. owl<br>
+      <input type="radio" name="q3" value="d" id="q3d">d. turkey<br>
+
+      <h3>4. how many active user are in facebook?</h3>
+      <input type="radio" name="q4" value="a" id="q4a">a. 1.29 billion<br>
+      <input type="radio" name="q4" value="b" id="q4b">b. 3.22 billion<br>
+      <input type="radio" name="q4" value="c" id="q4c">c. 2.99 billion<br>
+      <input type="radio" name="q4" value="d" id="q4d">d. 1.34 billion<br>
+
+      <h3>5. how many Grammys did elvis won?</h3>
+      <input type="radio" name="q5" value="a" id="q5a">a. 6<br>
+      <input type="radio" name="q5" value="b" id="q5b">b. 3<br>
+      <input type="radio" name="q5" value="c" id="q5c">c. 2<br>
+      <input type="radio" name="q5" value="d" id="q5d">d. 0<br>
+
+      <h3>6. what dose the M&M stand for?</h3>
+      <input type="radio" name="q6" value="a" id="q6a">a. mars and murrie<br>
+      <input type="radio" name="q6" value="b" id="q6b">b. me and myself<br>
+      <input type="radio" name="q6" value="c" id="q6c">c. morbidity and mortality<br>
+      <input type="radio" name="q6" value="d" id="q6d">d. march and may<br>
+
+      <h3>7. who named the pacific ocean</h3>
+      <input type="radio" name="q7" value="a" id="q7a">a. ferdinand magellan<br>
+      <input type="radio" name="q7" value="b" id="q7b">b. jonthan crane<br>
+      <input type="radio" name="q7" value="c" id="q7c">c. travis scott<br>
+      <input type="radio" name="q7" value="d" id="q7d">d. jim palnskey<br>
+      
+      <h3>8. demolition of the berlin wall separating east and west germany began in what year</h3>
+      <input type="radio" name="q8" value="a" id="q8a">a. 1982<br>
+      <input type="radio" name="q8" value="b" id="q8b">b. 1989<br>
+      <input type="radio" name="q8" value="c" id="q8c">c. 1978<br>
+      <input type="radio" name="q8" value="d" id="q8d">d. 1988<br>
+
+      <h3>9. what was the first soft drink in space</h3>
+      <input type="radio" name="q9" value="a" id="q9a">a. fanta<br>
+      <input type="radio" name="q9" value="b" id="q9b">b. pepsi<br>
+      <input type="radio" name="q9" value="c" id="q9c">c. cola<br>
+      <input type="radio" name="q9" value="d" id="q9d">d. dr. pepper<br>
+
+      <h3>10. how many episode in there in the simpson are there</h3>
+      <input type="radio" name="q10" value="a" id="q10a">a. 893<br>
+      <input type="radio" name="q10" value="b" id="q10b">b. 713<br>
+      <input type="radio" name="q10" value="c" id="q10c">c. 689<br>
+      <input type="radio" name="q10" value="d" id="q10d">d. 715<br>
+      <br><br>
+      <input type="submit" value="Submit Answers"><button onclick="restart()" class="restart">Start Over</button>
+    </form>
+  </section>
+</div>
+
+<script type="text/javascript">
+  var formElement = document.forms['quizForm'];
+
+formElement.onsubmit = function submitAnswers() {
+  var total = 10;
+  var score = 0;
+  var q1 = document.forms["quizForm"]["q1"].value,
+      q2 = document.forms["quizForm"]["q2"].value,
+      q3 = document.forms["quizForm"]["q3"].value,
+      q4 = document.forms["quizForm"]["q4"].value,
+      q5 = document.forms["quizForm"]["q5"].value;
+      q6 = document.forms["quizForm"]["q6"].value;
+      q7 = document.forms["quizForm"]["q7"].value;
+      q8 = document.forms["quizForm"]["q8"].value;
+      q9 = document.forms["quizForm"]["q9"].value;
+      q10 = document.forms["quizForm"]["q10"].value;
+
+  for (i = 1; i <= total;i++) {
+    if(eval('q'+i) === null || eval('q'+i) === ''){
+      alert('You missed question '+ i);
+      return false;
+    }
+  }
+
+  var answers = ["a","d","b","c","b","a","a","b","c","b"];
+
+  for (i = 1; i <= total;i++) {
+    if (eval('q'+i) === answers[i - 1]) {
+      score++;
+    }
+  }
+
+  var results = document.getElementById('results');
+  results.innerHTML ='<h3>Your score is <span>'+score+'</span> out of <span>'+total+'</span></h3>';
+
+  return false;
+}
+
+  function restart() {
+    location.reload(true);
+  }
+
+
+</script>
+
+</body>
+</html>
+

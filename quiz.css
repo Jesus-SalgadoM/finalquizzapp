@@ -1,0 +1,19 @@
+body{
+	color: blueviolet;
+	background-color: lightcyan;
+	font-family: gotham, "Helvetica Neue", Helvetice, Arial, "sans-serif;";
+}
+
+header{
+	text-align: center;
+}
+
+[id=main] {
+  background-color: whitesmoke;
+  width: 700px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
